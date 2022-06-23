@@ -1,0 +1,29 @@
+package com.example.firstapp;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.example.firstapp.model.GreatLearning;
+
+@SpringBootApplication
+public class FirstAppApplication implements CommandLineRunner  {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FirstAppApplication.class, args);
+		System.out.println("Hello to Spring Boot");
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+
+		GreatLearning gl = new GreatLearning();
+		gl.setCourseName("Spring Boot");
+		
+		
+		
+		
+		
+		
+	}
+
+}
